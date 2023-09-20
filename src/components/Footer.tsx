@@ -9,8 +9,8 @@ export const Footer = (props: any) => {
             Read to set sail
           </h5>
           <p className="text-center pt-5">
-            You've got what it takes to steer this ship to success. Let's
-            discuss how we can clear the way.
+            You ve got what it takes to steer this ship to success. Lets discuss
+            how we can clear the way.
           </p>
         </div>
       </div>
