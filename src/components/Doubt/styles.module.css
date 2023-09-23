@@ -1,0 +1,23 @@
+._title {
+  @apply text-center font-black text-3xl mb-10;
+}
+
+._grid {
+  @apply grid grid-cols-3 place-items-center;
+}
+
+._grid_column {
+  @apply text-center flex flex-col items-center justify-center mb-8;
+}
+
+._column_title {
+  @apply text-[#C09D44] font-black text-xl mt-6;
+}
+
+._column_subtitle {
+  @apply font-thin;
+}
+
+._note {
+  @apply text-center text-[#C09D44] italic text-sm pb-5;
+}
