@@ -1,0 +1,59 @@
+._popover {
+  @apply bg-[#212126];
+}
+
+._container {
+  @apply container mx-auto flex items-center px-6 py-2 h-24;
+}
+
+._grow {
+  @apply grow;
+}
+
+._navigation {
+  @apply hidden sm:flex items-center justify-center gap-2 md:gap-8;
+}
+
+._navigation_links {
+  @apply text-white transition-colors duration-300 ease-in-out hover:text-[#C09D44];
+}
+
+._popover_wrapper {
+  @apply flex grow items-center justify-end sm:hidden;
+}
+
+._popover_btn {
+  @apply inline-flex items-center justify-center rounded-md bg-[#212126] p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500;
+}
+
+._mobile_icon {
+  @apply h-6 w-6;
+}
+
+._popover_overlay {
+  @apply sm:hidden fixed inset-0 bg-black opacity-30;
+}
+
+._popover_panel {
+  @apply absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden;
+}
+
+._mobile_bg {
+  @apply rounded-lg bg-[#212126] shadow-lg ring-1 ring-black ring-opacity-5 divide-y-2 divide-gray-50;
+}
+
+._mobile_container {
+  @apply px-5 pt-5 pb-6;
+}
+
+._mobile_header {
+  @apply flex items-center justify-between;
+}
+
+._mobile_wrapper_links {
+  @apply mt-6;
+}
+
+._mobile_grid_links {
+  @apply grid gap-y-8;
+}

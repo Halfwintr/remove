@@ -1,7 +1,12 @@
 export default function Home() {
   return (
     <main>
-      <h1 className="px-10 py-10 text-center">Hello World</h1>
+      <header>
+        <link
+          rel="stylesheet"
+          href="https://use.typekit.net/hqi3lbf.css"
+        ></link>
+      </header>
     </main>
   );
 }
