@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 import { Header } from "../components/Header";
 import { Hero } from "@/components/Hero/Hero";
+import { Team } from "@/components/Team/Team";
 
 export const metadata: Metadata = {
   title: "Re:move",
@@ -26,6 +27,7 @@ export default function RootLayout({
         <main>
           <Hero />
           <Hero mirror revert />
+          <Team />
         </main>
       </body>
     </html>
