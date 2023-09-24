@@ -3,7 +3,7 @@
 }
 
 ._grid {
-  @apply grid grid-cols-3 place-items-center;
+  @apply sm:grid sm:grid-cols-3 sm:place-items-center flex flex-col;
 }
 
 ._grid_column {
@@ -19,5 +19,5 @@
 }
 
 ._note {
-  @apply text-center text-[#C09D44] italic text-sm pb-5;
+  @apply text-center text-[#C09D44] italic text-sm pb-5 animate-bounce;
 }

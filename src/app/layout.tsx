@@ -23,8 +23,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <Hero />
-        <main>{children}</main>
+        <main>
+          <Hero />
+          <Hero mirror revert />
+        </main>
       </body>
     </html>
   );

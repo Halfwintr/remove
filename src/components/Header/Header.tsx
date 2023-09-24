@@ -39,7 +39,11 @@ export const Header = (props: any) => {
         </div>
         <div className={styles._popover_wrapper}>
           <Popover.Button className={styles._popover_btn}>
-            <Bars3Icon className={styles._mobile_icon} aria-hidden="true" />
+            <Bars3Icon
+              className={styles._mobile_icon}
+              aria-hidden="true"
+              color="#C09D44"
+            />
           </Popover.Button>
         </div>
         <Popover.Overlay className={styles._popover_overlay} />
