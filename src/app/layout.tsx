@@ -1,14 +1,12 @@
-import { Footer } from "@/components/Footer";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import CompanyBrand from "../../public/images/remove-brand.svg";
-import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 
 import { Header } from "../components/Header";
 import { Hero } from "@/components/Hero/Hero";
 import { Team } from "@/components/Team/Team";
+import { Newsletter } from "@/components/Newsletter/Newsletter";
 
 export const metadata: Metadata = {
   title: "Re:move",
@@ -28,6 +26,7 @@ export default function RootLayout({
           <Hero />
           <Hero mirror revert />
           <Team />
+          <Newsletter />
         </main>
       </body>
     </html>
