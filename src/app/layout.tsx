@@ -8,6 +8,7 @@ import { Hero } from "@/components/Hero/Hero";
 import { Team } from "@/components/Team/Team";
 import { Newsletter } from "@/components/Newsletter/Newsletter";
 import { Footer } from "@/components/Footer";
+import { Blogpost } from "@/components/Blogpost/Blogpost";
 
 export const metadata: Metadata = {
   title: "Re:move",
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Hero mirror revert />
           <Team />
           <Newsletter />
+          <Blogpost />
         </main>
         <Footer />
       </body>
