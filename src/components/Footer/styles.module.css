@@ -1,0 +1,72 @@
+._footer {
+  @apply bg-[#212126] text-white pb-80 sm:h-[1500px] h-[2000px];
+  background-image: url("../../../public/images/main-illustration.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+
+._container {
+  @apply container mx-auto mt-12;
+}
+
+._title {
+  @apply text-[40px] text-center font-black uppercase;
+}
+
+._subtitle {
+  @apply text-[#C09D44];
+}
+
+._content {
+  @apply text-center pt-5;
+}
+
+._columns {
+  @apply flex justify-evenly sm:flex-row flex-col sm:mx-0 sm:my-0 mx-14 my-10;
+}
+
+._image_container {
+  @apply flex justify-center items-center mt-16;
+}
+
+._title_container {
+  @apply flex justify-center flex-col items-center ml-6;
+}
+
+._title_column {
+  @apply text-[20px] font-black text-[#C09D44];
+}
+
+._form {
+  @apply flex sm:justify-around sm:flex-row flex-col items-center gap-3;
+}
+
+._text_area_container {
+  @apply flex justify-center mt-3 mb-3 mx-3 sm:mx-0;
+}
+
+._text_area {
+  @apply block p-2.5 w-full h-[200px] text-sm text-gray-900 bg-gray-50 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mt-8;
+}
+
+._button_container {
+  @apply flex justify-center mt-10;
+}
+
+._image {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+._input {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block sm:w-9/12 w-[300px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mt-8;
+}
+
+._button {
+  @apply outline outline-offset-2 flex justify-evenly items-center outline-[#C09D44] text-[#C09D44] sm:w-[377px] sm:h-[74px] w-[285px] h-[70px] sm:text-[25px] sm:font-black sm:mt-0 sm:mb-0 mt-10 mb-10 sm:ml-6 ml-0;
+}

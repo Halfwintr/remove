@@ -7,6 +7,7 @@ import { Header } from "../components/Header";
 import { Hero } from "@/components/Hero/Hero";
 import { Team } from "@/components/Team/Team";
 import { Newsletter } from "@/components/Newsletter/Newsletter";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Re:move",
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Team />
           <Newsletter />
         </main>
+        <Footer />
       </body>
     </html>
   );
