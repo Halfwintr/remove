@@ -43,7 +43,7 @@
 }
 
 ._button {
-  @apply outline outline-offset-2 flex justify-evenly items-center outline-[#C09D44] text-[#C09D44] w-[247px] h-[44px] sm:mt-0 sm:mb-0 mt-10 mb-10 sm:ml-6 ml-0;
+  @apply outline outline-offset-2 flex justify-evenly items-center outline-[#C09D44] text-[#C09D44] w-[247px] h-[44px] sm:mt-0 sm:mb-0 mt-10 mb-10 sm:ml-6 ml-0 text-[12px];
 }
 
 ._link {
