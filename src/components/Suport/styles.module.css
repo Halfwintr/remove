@@ -1,0 +1,43 @@
+._support {
+  @apply bg-black text-white;
+}
+
+._container {
+  @apply container mx-auto;
+}
+
+._grid {
+  @apply sm:grid sm:grid-cols-2 flex flex-col-reverse;
+}
+
+._flex {
+  @apply flex flex-col justify-center;
+}
+
+._title {
+  @apply font-black text-[40px] text-[#C09D44] sm:text-left text-center;
+}
+
+._subtitle {
+  @apply font-black text-[30px] sm:text-left text-center;
+}
+
+._content {
+  @apply mt-4 sm:text-left text-center;
+}
+
+._grid_columns {
+  @apply sm:grid sm:grid-cols-4 flex flex-col;
+}
+
+._grid_columns_content {
+  @apply flex justify-around items-center;
+}
+
+._grid_columns_title {
+  @apply text-[#C09D44] font-black;
+}
+
+._grid_columns_subtitle {
+  @apply text-[12px];
+}
