@@ -1,9 +1,10 @@
 ._bg_black {
   @apply bg-[#212126] text-white;
-}
-
-._bg_white {
-  @apply bg-white text-black;
+  background-image: url("../../../public/images/main-bg-image.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  height: 885px;
 }
 
 ._grid_left {
@@ -51,9 +52,10 @@
 }
 
 ._title_right {
-  @apply sm:text-[40px] text-[35px] font-black uppercase text-[#C09D44];
+  @apply sm:text-[64px] text-[35px] font-black uppercase text-[#C09D44] block m-0;
 }
 
 ._subtitle_right {
-  @apply mt-3 text-[#C8C8C4];
+  @apply mt-3 text-[#C8C8C4] text-xl;
+  line-height: 30px;
 }

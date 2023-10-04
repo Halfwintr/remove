@@ -1,48 +1,22 @@
-import Image from "next/image";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import Link from "next/link";
+import { Blogpost } from "@/components/Blogpost/Blogpost";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero/Hero";
+import { Newsletter } from "@/components/Newsletter/Newsletter";
+import { Support } from "@/components/Suport/Support";
+import { Team } from "@/components/Team/Team";
 
 export default function Home() {
-  const blogDir = "blogs";
-
-  const files = fs.readdirSync(path.join(blogDir));
-
-  const blogs = files.map((filename) => {
-    const fileContent = fs.readFileSync(path.join(blogDir, filename), "utf-8");
-
-    const { data: frontMatter } = matter(fileContent);
-    return {
-      meta: frontMatter,
-      slug: filename.replace(".mdx", ""),
-    };
-  });
   return (
-    <main className="flex flex-col">
-      <h1 className="text-3xl font-bold">My Next.Js Blog Site</h1>
-
-      <section className="py-10">
-        <h2 className="text-2xl font-blod">Latest Blogs</h2>
-
-        <div className="py-2">
-          {blogs.map((blog) => (
-            <Link href={"/blogs/" + blog.slug} passHref key={blog.slug}>
-              <div className="py-2 flex justify-between align-middle gap-2">
-                <div>
-                  <h3 className="text-lg font-blod">{blog.meta.title}</h3>
-                  <div>
-                    <p className="text-gray-400">{blog.meta.description}</p>
-                  </div>
-                  <div className="my-auto text-gray-400">
-                    <p>{blog.meta.date}</p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
-    </main>
+    <>
+      <Header />
+      <Hero />
+      {/* <Hero mirror revert /> */}
+      <Support />
+      <Team />
+      <Newsletter />
+      <Blogpost />
+      <Footer />
+    </>
   );
 }

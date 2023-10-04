@@ -24,17 +24,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
+        {/* <Header /> */}
         <main>
-          <Hero />
+          {/* <Hero />
           <Hero mirror revert />
           <Support />
           <Team />
           <Newsletter />
-          <Blogpost />
+          <Blogpost /> */}
           {children}
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

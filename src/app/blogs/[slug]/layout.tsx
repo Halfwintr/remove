@@ -3,26 +3,22 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { Blogpost } from "@/components/Blogpost/Blogpost";
+import { Newsletter } from "@/components/Newsletter/Newsletter";
+import { Sitemap } from "@/components/Sitemap";
 
 export const metadata: Metadata = {
   title: "Re:move",
   description: "Get projects moving again",
 };
 
-export default function RootLayout({
+export default function BlogsLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
-    </html>
+    <section>
+      <div>{children}</div>
+    </section>
   );
 }

@@ -1,0 +1,7 @@
+._navigation_links {
+  @apply text-xl font-semibold mb-10 transition-colors duration-300 ease-in-out hover:text-[#C09D44];
+}
+
+._navigation_links_sub {
+  @apply text-xl font-semibold mb-3 transition-colors duration-300 ease-in-out hover:text-[#C09D44];
+}

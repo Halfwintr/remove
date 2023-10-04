@@ -4,6 +4,7 @@ import React, { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import CompanyBrand from "../../../public/images/remove-brand.svg";
+import CompanyBrandR from "../../../public/images/remove-brand-revert.svg";
 
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
@@ -12,27 +13,72 @@ import styles from "./styles.module.css";
 
 export const Header = (props: any) => {
   return (
-    <Popover className={styles._popover}>
+    <Popover className={props.revert ? styles._bg_white : styles._popover}>
       <div className={styles._container}>
-        <Image src={CompanyBrand} alt="Re:Move Brand" />
+        <Image
+          src={props.revert ? CompanyBrandR : CompanyBrand}
+          alt="Re:Move Brand"
+        />
         <div className={styles._grow}>
           <nav className={styles._navigation}>
-            <Link href="#" className={styles._navigation_links}>
+            <Link
+              href="#"
+              className={
+                props.revert
+                  ? styles._navigation_links_invert
+                  : styles._navigation_links
+              }
+            >
               Getting Projects Moving
             </Link>
-            <Link href="#" className={styles._navigation_links}>
+            <Link
+              href="#"
+              className={
+                props.revert
+                  ? styles._navigation_links_invert
+                  : styles._navigation_links
+              }
+            >
               Capabilities
             </Link>
-            <Link href="#" className={styles._navigation_links}>
+            <Link
+              href="#"
+              className={
+                props.revert
+                  ? styles._navigation_links_invert
+                  : styles._navigation_links
+              }
+            >
               About Us
             </Link>
-            <Link href="#" className={styles._navigation_links}>
+            <Link
+              href="#"
+              className={
+                props.revert
+                  ? styles._navigation_links_invert
+                  : styles._navigation_links
+              }
+            >
               FAQs
             </Link>
-            <Link href="#" className={styles._navigation_links}>
+            <Link
+              href="#"
+              className={
+                props.revert
+                  ? styles._navigation_links_invert
+                  : styles._navigation_links
+              }
+            >
               Case Studies
             </Link>
-            <Link href="#" className={styles._navigation_links}>
+            <Link
+              href="#"
+              className={
+                props.revert
+                  ? styles._navigation_links_invert
+                  : styles._navigation_links
+              }
+            >
               Contact
             </Link>
           </nav>

@@ -1,80 +1,33 @@
-._newsletter {
-  @apply bg-[#212126] text-white;
-}
-
 ._container {
   @apply container mx-auto;
 }
 
 ._grid {
-  @apply sm:grid sm:grid-cols-2 flex flex-col;
+  @apply mt-24 mb-28;
 }
 
-._content {
-  @apply sm:mt-[100px] sm:mb-[100px] mt-[50px] mb-[10px];
+._flex {
+  @apply flex justify-center;
+}
+
+._flex_content {
+  @apply flex flex-col justify-center ml-5;
 }
 
 ._title {
-  @apply text-white text-[40px] font-black text-center sm:text-left;
+  @apply text-base text-[#c09d44] uppercase font-black break-words;
 }
-
 ._subtitle {
-  @apply text-[40px] font-black text-[#C09D44];
+  @apply text-[#212126] text-2xl font-semibold;
 }
 
-._text {
-  @apply mt-4 text-center sm:text-left;
+._mock_image {
+  width: 180px;
+  height: 130px;
+  background: #212126;
 }
 
-._form {
-  @apply flex flex-col justify-center;
-}
-
-._fields {
-  @apply mt-3 mx-auto sm:mx-0 sm:ml-5 sm:mb-6;
-}
-
-._input {
-  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block sm:w-full w-[300px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mt-8;
-}
-
-._button_container {
-  @apply sm:flex sm:items-center sm:flex-row flex flex-col items-center;
-}
-
-._button {
-  @apply outline outline-offset-2 flex justify-evenly items-center outline-[#C09D44] text-[#C09D44] w-[247px] h-[44px] sm:mt-0 sm:mb-0 mt-10 mb-10 sm:ml-6 ml-0;
-}
-
-._link {
-  @apply ml-4 text-xs flex items-center italic sm:mt-0 sm:mb-0 mb-5 sm:block sm:flex-row flex-col text-center  sm:text-left;
-}
-
-._sub_link {
-  @apply text-[#C09D44] ml-1;
-}
-
-._swiper {
-  width: 100%;
-  height: 100%;
-}
-
-._swiper_slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  border: 1px solid black;
-  height: 200px;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper_slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+._image {
+  @apply mb-10;
+  transform: scaleX(-1);
 }
